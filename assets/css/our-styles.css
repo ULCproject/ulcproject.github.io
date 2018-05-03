@@ -306,6 +306,7 @@ a.nav-link.nav-dropdown-link {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 2px;
+  margin: -2px 0px 0px 0px;
 }
 
 a.nav-link.nav-dropdown-link:active, a.nav-link.nav-dropdown-link:focus {
