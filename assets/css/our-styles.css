@@ -225,6 +225,10 @@ html, body {
     line-height: 12px;
 }
 
+.newsletter-form-bounty {
+  margin-top: -20px;
+}
+
 .newsletter-form-bounty .form-group {
     position:relative;
     margin:0 auto;
@@ -320,4 +324,8 @@ a.nav-link.nav-dropdown-link:active, a.nav-link.nav-dropdown-link:focus {
 
 .dropdown-item {
   color: #eee;
+}
+
+.bounty-button {
+  margin: 25px 0px;
 }
