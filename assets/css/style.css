@@ -818,8 +818,12 @@ fieldset {
 	right: 70%;
 }
 .home-static-middle p:after {
+/* WSL
     margin-left: 15px;
 	left: 70%;
+*/
+margin-left: 0 !important;
+left: 0 !important;
 }
 .header-title{
     width: 70%;
@@ -914,6 +918,7 @@ fieldset {
 	.home-static-middle p:after {
 		left: 80%;
 	}
+	
 .countdown-container h4 {
 		font-size: 53px;
 	}
@@ -961,14 +966,16 @@ fieldset {
     .btn-home {
         margin-right: 0;
     }
-    .btn-home {
+    .btn-home, .btn-home-2{
         padding: 8px 15px;
         margin-top: 10px;
         font-size: 13px;
     }
+/*
 	.btn-home-2 {
 		display: none;
 	}
+*/
 }
 @media only screen and (max-width: 576px) {
 	.home-static-text h2 {
@@ -998,9 +1005,11 @@ fieldset {
         margin-top: 10px;
         font-size: 13px;
     }
+/*
 	.btn-home-2 {
 		display: none;
 	}
+*/
 }
 
 /*
@@ -1369,25 +1378,22 @@ service
     position:relative;
     line-height:1.8em;
 }
+/*
+WSL
 @media (min-width: 1200px){
     .outer .right-column{
         margin-left: 33.3%
     }
 }
+*/
 @media only screen and (max-width: 1200px){
+/*	
+	WSL
     .why-us .outer .inner-circle{
         display:none;   
     }
-    
-    .why-us .outer .service-box-three:first-child,
-    .why-us .outer .service-box-three:last-child,
-    .why-us .outer .service-box-four:first-child,
-    .why-us .outer .service-box-four:last-child{
-        left:0px;
-        top:0px;
-        right:0px;
-        bottom:0px;
-    }
+*/
+
 }
 @media only screen and (max-width: 767px){
     .why-us .outer:before,
@@ -1747,9 +1753,11 @@ service
     line-height:1.8em;
 }
 @media (min-width: 1200px){
+/* WSL
     .outer .right-column{
         margin-left: 33.3%
     }
+*/
 }
 @media (min-width: 1200px){
     .how-it-works .outer .right-column {
@@ -3251,7 +3259,8 @@ service
 .faq-tab .nav-tabs .nav-item.show .nav-link,
 .faq-tab .nav-tabs .nav-link.active {
     border: none;
-    border-left: 3px solid #00c4fc;
+/* WSL     border-left: 3px solid #00c4fc; */
+    border-left: 3px solid #ed1b24;
 }
 .faq-tab .nav-tabs {
     border-bottom: none;
@@ -3769,3 +3778,138 @@ input:focus,textarea:focus {
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
+
+/* WSL */
+
+
+@media (min-width: 1200px){
+    .how-it-works .outer .right-column {
+        margin-left: 3.3%;
+    }	
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.how-it-works .outer .right-column {
+        margin-left: 3.3%;
+    }
+	
+	.nav-item a {font-size: 12px !important}
+	
+}
+
+@media (min-width: 992px){
+    .outer .right-column{
+        margin-left: 33.3%
+    }
+}
+
+@media (max-width: 991px){
+	.why-us .outer .inner-circle{
+        display:none;   
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media only screen and (max-width: 1199px){
+	
+	    .team-member img {width: 100%}
+	
+}
+
+@media only screen and (max-width: 991px) {
+	
+	.nav-item .dropdown a {
+		text-align: left
+	}
+	
+	.navbar ul {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	
+	.home-static-1 .header-content, .home-static-1.register {display: inherit; min-height: auto !important; }
+	    
+    .why-us .outer .service-box-three:first-child,
+    .why-us .outer .service-box-three:last-child,
+    .why-us .outer .service-box-four:first-child,
+    .why-us .outer .service-box-four:last-child{
+        left:0px;
+        top:0px;
+        right:0px;
+        bottom:0px;
+    }
+    
+
+
+}
+
+@media only screen and (min-width:481px) and (max-width: 767px) {
+	.about-image {text-align: center}
+	.about-image img {
+    	width: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	
+	
+	.home-static-1 .header-content, .home-static-1.register {display: inherit; height: auto !important; min-height: inherit !important; padding-bottom: 20px;}
+	
+	.navbar {
+		padding: 10px 16px !important;
+	}
+	.navbar ul {
+		margin-top: 10px;
+		max-height: 80vh;
+		overflow: auto !important
+	}
+
+	
+	.navbar-brand{
+		width: 150px !important;
+		height: auto !important;
+	}
+	
+	.navbar-brand img {
+		width: 150px;
+		height: auto 
+	}
+	
+
+	
+	.newsletter-form-bounty .form-group {
+		width: auto !important;
+	}
+	
+	.container {
+		width: 90%
+	}
+	
+	.send-btn {
+		right: 10px !important
+	}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+	
+	.main-footer .newsletter-widget {
+		margin-top: 30px;
+	}
+	
+
+
+}
+
+
+
+
+
+
+
