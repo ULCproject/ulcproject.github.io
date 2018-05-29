@@ -190,6 +190,12 @@ html, body {
   z-index: -1;
 }
 
+@media (max-width: 575px) {
+  .scroll-menu {
+    height: 150px;
+  }
+}
+
 .has-line-center:after, .has-line:after {
   background-color: #ed1d24;
 }

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <title>ULC - Unblocked Ledger Coin</title>
+    <title>ULC Project</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Font  -->
@@ -26,6 +26,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/our-styles.css">
+    <link rel="stylesheet" href="node_modules/jquery-toast-plugin/dist/jquery.toast.min.css">
 </head>
 
 <body id="page-top">
@@ -99,7 +100,7 @@
 	                    </div>
 	                    <p><br>The first linearly scalable, self-governing payment network</p>
 	
-	                    <div class="header-desc">Unblocked Ledger Coin is a payment network designed to remedy the problems of traditional blockchains &mdash; scalability, decentralization, security and long term sustainability. The technology being developed for ULC can accommodate billions of daily active users and can be applied to many future global-scale decentralized applications. The ULC payment network is the first application of this technology.</div>
+	                    <div class="header-desc">Unblocked Ledger Coin (ULC) is a payment network designed to remedy the problems of traditional blockchains &mdash; scalability, decentralization, security and long term sustainability. The technology being developed for ULC can accommodate billions of daily active users and can be applied to many future global-scale decentralized applications. The ULC payment network is the first application of this technology.</div>
 	          
 	                    <div class="home-btn-wrapper">
 	                        <a href="#about" class="js-scroll-trigger btn-home">READ MORE</a>
@@ -127,7 +128,7 @@
                     <div class="section-title mt-10">
                         <h3>Technology</h3>
                         <span></span>
-                        <p>The Unblocked Ledger project is building a peer-to-peer payment network that incorporates sharding and auto-scaling to provide high throughput, low latency, and immediate finality while maintaining the highest level of decentralization and security.</p>
+                        <p>The ULC Project is building is building a peer-to-peer payment network that incorporates sharding and auto-scaling to provide high throughput, low latency, and immediate finality while maintaining the highest level of decentralization and security.</p>
                         <br>
                         <p>The supporting technology that allows for these features is our original Unblocked Consensus Algorithm, which is based on Proof-of-Quorum, in combination with our Unblocked Sharded Ledger system, which is a distributed ledger that addresses the problems of linear scaling and state sharding as the network grows.</p>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
@@ -220,7 +221,7 @@
                           <div class="inner-box">
                               <div class="icon-box"><img src="assets/img/icons/i6.png" alt="icon"></div>
                               <h3 class="change-on-hover">Sustainable</h3>
-                              <div class="text"> A community-activated soft fork system allows setting network parameters and provides a maintenance fund. </div>
+                              <div class="text"> A community-activated soft fork system allows setting network parameters and provides a maintenance fund to ensure the network can support itself and remains flexible. </div>
                           </div>
                       </div>
                       
@@ -277,7 +278,7 @@
                 <p class="white">To stay up-to-date about ULC bounties, airdrops and project news, subscribe to our newsletter! </p>
             </div>
             <div class="newsletter-form-bounty">
-                 <form class="description" name="theform" action="https://my.sendinblue.com/users/subscribeembed/js_id/387o4/id/1" method="POST">
+                 <form class="newsletter-form description" id="bountyForm" name="theform" action="https://my.sendinblue.com/users/subscribeembed/js_id/387o4/id/1" method="POST">
                     <input type="hidden" name="js_id" value="387o4">
                     <input type="hidden" name="listid" value="4">
                     <input type="hidden" name="from_url" value="yes">
@@ -733,25 +734,21 @@
                 <div class="row faq-tab scrollable-wrap">
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                         <ul class="nav nav-tabs scroll-menu">
-                            <li class="nav-item"><a href="#" data-target="#faq1" data-toggle="tab" class="nav-link active">What is the purpose of the Unblocked Ledger project?<i class='icofont icofont-rounded-right'></i></a>
+                            <li class="nav-item"><a href="#" data-target="#faq1" data-toggle="tab" class="nav-link active">What is the purpose of the ULC Project?<i class='icofont icofont-rounded-right'></i></a>
                             </li>
-                            <li class="nav-item"><a href="#" data-target="#faq2" data-toggle="tab" class="nav-link">What problem does the UL project solve?<i class='icofont icofont-rounded-right'></i></a>
+                            <li class="nav-item"><a href="#" data-target="#faq2" data-toggle="tab" class="nav-link">Does this project have a token?<i class='icofont icofont-rounded-right'></i></a>
                             </li>
-                            <li class="nav-item"><a href="#" data-target="#faq3" data-toggle="tab" class="nav-link">What are ULT?<i class='icofont icofont-rounded-right'></i></a>
-                            </li>
-                            <li class="nav-item"><a href="#" data-target="#faq4" data-toggle="tab" class="nav-link">What is the difference between ULT and ULC?<i class='icofont icofont-rounded-right'></i></a>
-                            </li>
-                            <li class="nav-item"><a href="#" data-target="#faq5" data-toggle="tab" class="nav-link">Why is there no ICO for ULT?<i class='icofont icofont-rounded-right'></i></a>
-                            </li>
-                             <li class="nav-item"><a href="#" data-target="#faq7" data-toggle="tab" class="nav-link">What is the purpose of ULC?<i class='icofont icofont-rounded-right'></i></a>
-                            </li>
-                            <li class="nav-item"><a href="#" data-target="#faq8" data-toggle="tab" class="nav-link">What is proof-of-quorum?<i class='icofont icofont-rounded-right'></i></a>
-                            </li>
-                             <li class="nav-item"><a href="#" data-target="#faq9" data-toggle="tab" class="nav-link">Why does ULC not use a blockchain?<i class='icofont icofont-rounded-right'></i></a>
-                            </li>
-                             <li class="nav-item"><a href="#" data-target="#faq10" data-toggle="tab" class="nav-link">What are the disadvantages of blockchains?<i class='icofont icofont-rounded-right'></i></a>
-                            </li>
-                             <li class="nav-item"><a href="#" data-target="#faq11" data-toggle="tab" class="nav-link">Is the UL project open source?<i class='icofont icofont-rounded-right'></i></a>
+                            <li class="nav-item"><a href="#" data-target="#faq3" data-toggle="tab" class="nav-link">What is the difference between ULT and ULC?<i class='icofont icofont-rounded-right'></i></a>
+                            </li>                            
+                            <li class="nav-item"><a href="#" data-target="#faq4" data-toggle="tab" class="nav-link">Why is there no ICO?<i class='icofont icofont-rounded-right'></i></a>
+                            </li>                            
+                            <li class="nav-item"><a href="#" data-target="#faq5" data-toggle="tab" class="nav-link">How can I obtain tokens?<i class='icofont icofont-rounded-right'></i></a>
+                            </li>                            
+                            <li class="nav-item"><a href="#" data-target="#faq6" data-toggle="tab" class="nav-link">Is this project similar to EOS?<i class='icofont icofont-rounded-right'></i></a>
+                            </li>                            
+                            <li class="nav-item"><a href="#" data-target="#faq7" data-toggle="tab" class="nav-link">Is the ULC Project open source?<i class='icofont icofont-rounded-right'></i></a>
+                            </li>                            
+                            <li class="nav-item"><a href="#" data-target="#faq8" data-toggle="tab" class="nav-link">Where can I get answers to more questions?<i class='icofont icofont-rounded-right'></i></a>
                             </li>
                         </ul>
                     </div>
@@ -759,57 +756,36 @@
                     <div class="col-lg-8 col-md-12 col-sm-12 col-12">
                         <div class="tab-content">
                             <div id="faq1" class="tab-pane fade active show">
-                              <h4>What is the purpose of the Unblocked Ledger project?</h4>
-                              <p>The Unblocked Ledger project aims to build and showcase a highly scalable, truly decentralized payment network referred to as Unblocked Ledger Coin (ULC). The software built to showcase this payment network can be reused to build other networks for enterprise or public use.</p>
-
+                              <h4>What is the purpose of the ULC Project?</h4>
+                              <p>The ULC Project aims to build and showcase a linearly scalable, self-governing, truly decentralized payment network with it’s own coin called ULC. The software built to showcase this payment network provides a platform that can be reused to build other networks for enterprise or public use.</p>
                             </div>
                             <div id="faq2" class="tab-pane fade">
-                                <h4>What problem does the UL project solve?</h4>
-                                <p>Unblocked Ledger aims to solve the scalability problem of traditional blockchains and provide a secure, fast, and sustainable payment network for enterprise and public use.</p>
+                              <h4>Does this project have a token?</h4>
+                              <p>Yes, we are distributing an ERC-20 token on the Ethereum network called Unblocked Ledger Token (ULT). The token can later be transferred to the network developed by this project.</p>
                             </div>
                             <div id="faq3" class="tab-pane fade">
-                                <h4>What are ULT?</h4>
-                                <p>Unblocked Ledger Tokens (ULT) are ERC-20 compliant tokens on the Ethereum blockchain. ULT will be given for bounties completed to create and launch the Unblocked Ledger Coin network.</p>
+                              <h4>What is the difference between ULT and ULC?</h4>
+                              <p>ULT are ERC-20 tokens on the Ethereum blockchain, while ULC are coins on the peer-to-peer network created by this project. Once the software for this project is complete and the main net launched, ULT can be transferred to the network and become ULC.</p>
                             </div>
                             <div id="faq4" class="tab-pane fade">
-                                <h4>What is the difference between ULT and ULC?</h4>
-                                <p>ULT are ERC-20 tokens on the Ethereum blockchain, while ULC are coins on the peer-to-peer network created by the Unblocked Ledger project.</p>
+                              <h4>Why is there no ICO?</h4>
+                              <p>Instead of selling our tokens for other tokens (like Bitcoin or Ethereum) and using that to pay the developers, we are directly giving our tokens as gratuity to developers for helping to create the ULC software. We are also giving our tokens for completing bounties or providing other services to the project. The tokens will gain value based on the efforts of those who contributed to the project and the contributors will be the first to realize the gains of their efforts. This better aligns the incentives to ensure the project is successfully completed.</p>
                             </div>
                             <div id="faq5" class="tab-pane fade">
-                                <h4>Why is there no ICO for ULT?</h4>
-                                <p>We are not doing an ICO because it may violate securities and exchange regulations in some jurisdictions. Also we want the direct contributors to the project to benefit as opposed to speculators.</p>
-								<br>
-								<p>ULT will only be distributed as bounties to those who help with developing and launching the project. Only those who believe in the project enough to directly contribute their effort to it will earn ULT. This is very similar to coins like bitcoin being earned by miners contributing resources to the network.</p>
-								<br>
-								<p>We will also do some airdrops to grow the community and give them a chance to test out the ease and speed of our payment network.</p>
+                              <h4>How can I obtain tokens?</h4>
+                              <p>There are several ways. If you are a developer you should fill out the Join form and request to join the development team and earn tokens that way. We also post bounties from time to time and you can earn tokens by completing them. We will have a faucet in the future, so signup to be notified about it. You can contact the developers and buy tokens directly from them. You can also check your favorite exchange to see if they have chosen to list our token.</p>
+                            </div>
+                            <div id="faq6" class="tab-pane fade">
+                              <h4>Is this project similar to EOS?</h4>
+                              <p>In some ways it is similar to EOS since we are both building platform software and are distributing a token that can later be transferred to the network developed by the project. However, our network is technically very different in many ways. One key difference is our goal of maximum decentralization with many nodes able to join the network and low resource requirements for the nodes.</p>
                             </div>
                             <div id="faq7" class="tab-pane fade">
-                                <h4>What is the purpose of ULC?</h4>
-                                <p>The main purpose of coins on the ULC network is to provide trustless value transfer irrespective of location. In addition, the ULC network aims to provide very high throughput, low latency, immediate finality and very low transaction fees.</p>
+                              <h4>Is the ULC Project open source?</h4>
+                              <p>Not during development. Once the project is completed, the source code will be made available under a Creative Commons BY-NC-SA license with a restriction on commercial use. After 10 year, it will be available under a Creative Commons BY license with no restrictions. Anyone interested in reviewing the code during development, may do so with a NDA which expires after the code is released.</p>
                             </div>
                             <div id="faq8" class="tab-pane fade">
-                                <h4>What is Proof-of-Quorum?</h4>
-                                <p>Proof-of-Quorum is a type of consensus algorithm which provides a provable receipt for every accepted transaction. It is energy efficient and does not require staking coins.</p>
-                            </div>
-                            <div id="faq9" class="tab-pane fade">
-                                <h4>Why does ULC not use a blockchain?</h4>
-                                <p>Grouping transactions into blocks has many inherent disadvantages. Processing each transaction individually provides the highest possible throughput and lowest latency.</p>
-                            </div>
-                            <div id="faq10" class="tab-pane fade">
-                                <h4>What are the disadvantages of blockchains?</h4>
-                                <br>
-                                <h6>Throughput</h6>
-                                <p>The transaction throughput rate becomes limited by the average time between blocks and the maximum allowed size of the block. Adding more computers to the network does not help to increase the throughput; rather it has the negative effect of increasing the network bandwidth consumed by each transaction. </p>
-                                <hr>
-                                <h6>Node Bias</h6>
-                                <p>A single node (the one which produces the block) gets to decide which transactions will be in the block. That node can be biased and choose not to include some transactions or even create blocks with no transactions other than it’s own. </p>
-                                <hr>
-                                <h6>Time Resolution</h6>
-                                <p>The transactions in a block are considered to have occured at the same time. For some applications such as exchanges or games, this does not provide sufficient time resolution. </p>
-                            </div>
-                            <div id="faq11" class="tab-pane fade">
-                                <h4>Is the ULC project open source?</h4>
-                                <p>Once the project is completed, the source code will be made available under a Creative Commons BY-NC-SA license. After 10 year, it will be available under a Creative Commons BY license. Anyone interested in reviewing the code during development, may do with a NDA which expires after the code is released.</p>
+                              <h4>Where can I get answers to more questions?</h4>
+                              <p>You can check the Advanced FAQ in our Wiki. (give link to Advanced FAQ in Wiki). If you still have questions, email info@ulcproject.com.</p>
                             </div>
                         </div>
                     </div>
@@ -827,7 +803,7 @@
             <div class="section-title text-center">
                 <h3 class="white">Join Us</h3>
                 <span></span>
-                <p class="white">Unlike most crypto projects, ULC will be funded by distributing its own token for bounties instead of an ICO. That is, we will be rewarding contributors with ULT tokens. Bounties for specific tasks will be coming soon.</p>
+                <p class="white">Unlike most crypto projects, the development of ULC will be incentivized by the project distributing its own token for bounties instead of an ICO. That is, we will be rewarding contributors with ULT tokens. Bounties for specific tasks will be coming soon.</p>
                 <p class="white">If you are excited about the project and interested in becoming a developer, don't hesitate to apply!</p>
             </div>
             <div class="row">
@@ -870,36 +846,18 @@
          <div class="container">
              
             <div class="row clearfix">
-               <!--Footer Column-->
-               <!--
-               <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                  <div class="footer-widget about-widget">
-                     <h3 class="has-line-center">About Unblocked Ledger</h3>
-                     <div class="widget-content">
-                        <div class="text">The Unblocked Ledger project is dedicated to solving the scalability problems of blockchain with practical and secure solutions at the fundamental level.</div>
-                          <ul class="social-links">
-                              <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                              <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                              <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                              <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                              <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                           </ul>
-                         </div>
-                     </div>
-                 </div>
-                 -->
                  <!--Footer Column-->
                  <div class="footer-column col-md-4 col-sm-6 col-6">
                      <div class="footer-widget contact-widget">
                          <h3 class="has-line-center">Community</h3>
                          <div class="widget-content">
                              <ul class="contact-info">
-                                <li><a href="https://github.com/ULCproject">GitHub</a></li>
-                                <li><a href="https://twitter.com/ulcproject">Twitter</a></li>
-                                <li><a href="https://www.reddit.com/r/ulcproject">Reddit</a></li>
-                                <li><a href="https://medium.com/ulc-project">Medium</a></li>
-                                <li><a href="https://t.me/joinchat/HBEmUk3e7tgaNzCQWJdvrg">Telegram</a></li>
-                                <li><a href="https://www.youtube.com/channel/UC-DQu61lxOvicMi0VsSIAtA">YouTube</a></li>
+                                <li><a href="https://github.com/ULCproject" target="_blank">GitHub</a></li>
+                                <li><a href="https://twitter.com/ulcproject" target="_blank">Twitter</a></li>
+                                <li><a href="https://www.reddit.com/r/ulcproject" target="_blank">Reddit</a></li>
+                                <li><a href="https://medium.com/ulc-project" target="_blank">Medium</a></li>
+                                <li><a href="https://t.me/joinchat/HBEmUk3e7tgaNzCQWJdvrg" target="_blank">Telegram</a></li>
+                                <li><a href="https://www.youtube.com/channel/UC-DQu61lxOvicMi0VsSIAtA" target="_blank">YouTube</a></li>
                              </ul>
                          </div>
                      </div>
@@ -931,8 +889,8 @@
                          <h3 class="has-line-center">Newsletter</h3>
                          <div class="widget-content">
                            <div class="text">Stay updated with our latest news.</div>
-                              <div class="newsletter-form">
-                                 <form class="description" name="theform" action="https://my.sendinblue.com/users/subscribeembed/js_id/387o4/id/1" method="POST">
+                              <div class="newsletter-form-footer">
+                                 <form class="newsletter-form description" id="footerForm" name="theform" action="https://my.sendinblue.com/users/subscribeembed/js_id/387o4/id/1" method="POST">
                                     <input type="hidden" name="js_id" value="387o4">
                                     <input type="hidden" name="listid" value="4">
                                     <input type="hidden" name="from_url" value="yes">
@@ -995,8 +953,11 @@
     <script src="assets/js/scrolltopcontrol.js"></script>
     <!-- form-contact js -->
     <script src="assets/js/form-contact.js"></script>
-    
+    <!-- jQuery Toasts -->
+    <script src="node_modules/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+    <!-- Our Homebrew Scripts -->
     <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
+

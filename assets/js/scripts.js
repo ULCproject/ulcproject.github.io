@@ -1,6 +1,15 @@
 (function($) {
     'use strict';
 
+    var submitSuccess = function() {
+        $.toast({
+            text : '<strong style="font-size: 16px;">Success</strong><p>You have been added to our mailing list! We will now regularly send you updates!</p>',
+            hideAfter : 5000,
+            bgColor : 'green',
+            icon : 'success'
+        });
+    };
+
     $(document).on('ready', function() {
 			
         /* MENU JS */
@@ -30,6 +39,26 @@
         $('body').scrollspy({
             target: '#mainNav',
             offset: 54
+        });
+
+        $('#bountyForm').submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                url:'https://my.sendinblue.com/users/subscribeembed/js_id/387o4/id/1',
+                type:'post',
+                data:$('#bountyForm').serialize(),
+                success: submitSuccess
+            });
+        });
+
+        $('#footerForm').submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                url:'https://my.sendinblue.com/users/subscribeembed/js_id/387o4/id/1',
+                type:'post',
+                data:$('#footerForm').serialize(),
+                success: submitSuccess
+            });
         });
     });
 	
