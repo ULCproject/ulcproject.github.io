@@ -2,5 +2,6 @@
 *.sublime-workspace
 _site/
 _data/
-_layouts
+_includes/
+_layouts/
 _config.yml
