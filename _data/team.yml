@@ -9,6 +9,17 @@
     title: Developer
     photo: artyom.jpg
     linkedin: https://www.linkedin.com/in/artyomch/
+  -
+    name: Carlos A de Araujo Barreto
+    title: Developer
+    photo: carlos.jpg
+    linkedin: https://www.linkedin.com/in/carlos-araujo-barreto/
+  -
+    name: Curt Phillips
+    title: Developer
+    photo: curt.jpg
+    linkedin: https://www.linkedin.com/in/curtwphillips/
+-
   - 
     name: Derrick Farris
     title: Developer
@@ -19,7 +30,6 @@
     title: Developer
     photo: gani.jpg
     linkedin: https://linkedin.com/in/gani-padela-069876109/
--
   - 
     name: Maher Ben Taleb Ali
     title: Developer
@@ -30,6 +40,7 @@
     title: Developer
     photo: omar.jpg
     linkedin: https://www.linkedin.com/in/omarsyed1/
+-
   - 
     name: Ryan Hee
     title: Developer
@@ -40,6 +51,11 @@
     title: Developer
     photo: salman_new.jpg
     linkedin: https://linkedin.com/in/salman-ahmad-4a4573113/
+  -
+    name: Thant Sin Toe
+    title: Developer
+    photo: thant.jpg
+    linkedin: https://www.linkedin.com/in/thant-sin-toe-71713265/
 -
   - 
     name: Michael Mayes
