@@ -1,7 +1,3 @@
 *.sublime-project
 *.sublime-workspace
 _site/
-_data/
-_includes/
-_layouts/
-_config.yml

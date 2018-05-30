@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -576,143 +579,20 @@
               <h3>Team</h3>
               <span></span>
             </div>
-            <div class="lineup row justify-content-center">
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/aamir.png" alt="Aamir Syed">
-                <div class="member-info">
-                  <strong class="member-name">Aamir Syed</strong>
-                  <p class="member-title">Developer</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/asyed94/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
+            {% for row in site.data.team %}
+              <div class="lineup row justify-content-center">
+                {% for member in row %}
+                  <div class="col-sm-6 col-md-3 team-member">
+                    <img class="member-photo" src="assets/img/team/{{ member.photo }}" alt="{{ member.name }}">
+                    <div class="member-info">
+                      <strong class="member-name">{{ member.name }}</strong>
+                      <p class="member-title">{{ member.title }}</p>
+                      <a class="member-link js-scroll-trigger" href="{{ member.linkedin }}"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                {% endfor %}
               </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/artyom.jpg" alt="Artyom Tchebotaryov">
-                <div class="member-info">
-                  <strong class="member-name">Artyom Tchebotaryov</strong>
-                  <p class="member-title">Developer</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/artyomch/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/derrick.jpg" alt="Derrick Farris">
-                <div class="member-info">
-                  <strong class="member-name">Derrick Farris</strong>
-                  <p class="member-title">Developer</p>
-                  <a class="member-link" href="https://linkedin.com/in/derrickfarris/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/gani.jpg" alt="Gani Padela">
-                <div class="member-info">
-                  <strong class="member-name">Gani Padela</strong>
-                  <p class="member-title">Developer</p>
-                  <a class="member-link" href="https://linkedin.com/in/gani-padela-069876109/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="lineup row justify-content-center">
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/maher.jpg" alt="Maher Ben Taleb Ali">
-                <div class="member-info">
-                  <strong class="member-name">Maher Ben Taleb Ali</strong>
-                  <p class="member-title">Developer</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/maher-ben/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/omar.jpg" alt="Omar Syed">
-                <div class="member-info">
-                  <strong class="member-name">Omar Syed</strong>
-                  <p class="member-title">Developer</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/omarsyed1/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/ryan.jpg" alt="Ryan Hee">
-                <div class="member-info">
-                  <strong class="member-name">Ryan Hee</strong>
-                  <p class="member-title">Developer</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/ryan-hee-3a3095158/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/salman_new.jpg" alt="Salman Ahmad">
-                <div class="member-info">
-                  <strong class="member-name">Salman Ahmad</strong>
-                  <p class="member-title">Developer</p>
-                  <a class="member-link" href="https://linkedin.com/in/salman-ahmad-4a4573113/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="lineup row justify-content-center">
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/michael.jpg" alt="Michael Mayes">
-                <div class="member-info">
-                  <strong class="member-name">Michael Mayes</strong>
-                  <p class="member-title">Evangelist</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/michaeldmayes/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/shumaila.jpg" alt="Shumaila Kidwai">
-                <div class="member-info">
-                  <strong class="member-name">Shumaila Kidwai</strong>
-                  <p class="member-title">Social Media Manager</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/shumaila-kidwai-645155a1/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/marc.jpg" alt="Marc Mattox">
-                <div class="member-info">
-                  <strong class="member-name">Marc Mattox</strong>
-                  <p class="member-title">Community Relations</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/marcmattox/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/james.jpg" alt="James Ross">
-                <div class="member-info">
-                  <strong class="member-name">James Ross</strong>
-                  <p class="member-title">Community Relations</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/jamestross/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="lineup row justify-content-center">
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/grant.jpeg" alt="Grant Gulovsen">
-                <div class="member-info">
-                  <strong class="member-name">Grant Gulovsen</strong>
-                  <p class="member-title">Legal Advisor</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/gulovsen/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/joe.jpg" alt="Joe Schloesser">
-                <div class="member-info">
-                  <strong class="member-name">Joe Schloesser</strong>
-                  <p class="member-title">Advisor</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/josephschloesser/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/gsyed.jpg" alt="Ghousuddin Said">
-                <div class="member-info">
-                  <strong class="member-name">Ghousuddin Syed</strong>
-                  <p class="member-title">Advisor</p>
-                  <a class="member-link" href="https://www.linkedin.com/in/gsyed/"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="lineup row justify-content-center">
-              <div class="col-sm-6 col-md-3 team-member">
-                <img class="member-photo" src="assets/img/team/you.png" alt="No Avatar">
-                <div class="member-info">
-		            <strong class="member-name"><a class="js-scroll-trigger" href="#join">You?</a></strong>
-                  <p class="member-title">Developer</p>
-                </div>
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
