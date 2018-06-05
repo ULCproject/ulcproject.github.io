@@ -9,11 +9,11 @@
 title: ULC Project
 email: info@ulcproject.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Unblocked Ledger Coin (ULC) is a payment network designed to remedy the problems of traditional blockchains — scalability, decentralization, security and long term sustainability. 
+  The technology being developed for ULC can accommodate billions of daily active users and can be applied to many future global-scale decentralized applications. 
+  The ULC payment network is the first application of this technology.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ulcproject.com" # the base hostname & protocol for your site
-
+thumbnail: "assets/img/logo_notext.png"
 # Build settings
 markdown: kramdown
