@@ -1426,6 +1426,11 @@ textarea.contact-form__input {
   opacity: .8;
 }
 
+.btn-primary a {
+  text-decoration: none;
+  color: white;
+}
+
 /*------------------------faq---------------*/
 
 .hedding{
