@@ -17,3 +17,4 @@ document.querySelector('#hero-menu').
       closeMenuAndGoTo(link.getAttribute('href'))
     }
   })
+

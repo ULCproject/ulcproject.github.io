@@ -1426,3 +1426,69 @@ textarea.contact-form__input {
   line-height: 1.7;
   opacity: .8;
 }
+
+/*------------------------faq---------------*/
+
+.hedding{
+	font-size:30px;
+	text-shadow: 0 1px 0 rgb(204,204,204) , 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902) ;
+}
+a:hover{
+    text-decoration:none;
+}
+a:focus { 
+    outline: 0; 
+}
+.panel-group .panel-heading {
+    background: white;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.title-block{
+    font-size:20px;
+}
+.menu-lg > .item {
+  padding: 10px 20px;
+  margin-bottom: 2px;
+  background: #f6f6f6;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.menu-lg > .item > .fa {
+  float: left;
+  margin-top: 10px;
+  font-size:25px;
+}
+.menu-lg > .item > .content {
+  overflow: hidden;
+  margin-left: 50px;
+}
+.menu-lg > .item .title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.menu-lg > .item .title a {
+  text-decoration: none;
+  color: #505050;
+  font-size: 15px;
+}
+.menu-lg > .item .description {
+  font-size: 13px;
+}
+.panel-group .panel-body {
+    font-size: 13px;
+    background: #f6f6f6;
+    -webkit-box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.03);
+    box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.03);
+}
+.panel-collapse{
+    margin-top:-10px;
+    margin-bottom:10px;
+    padding: 0px;
+}
+.panel-group .panel .panel-heading a{
+    font-size:20px;
+    color:#68727d;
+}                    
